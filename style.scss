@@ -1,0 +1,67 @@
+@use 'reset';
+@use 'fonts';
+
+@mixin mainButton() {
+    width: 380px;
+    height: 50px;
+    background: #4EBD09;
+    border-radius: 6px;
+    padding: 0px 12px;
+    cursor: pointer;
+    @include fonts.b1();
+}
+
+*{
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+}
+
+// Desktop 
+.main{
+    .introduce-section {
+        background: #0D1A30;
+        color: #ffffff;
+        padding-top: 24px;
+        padding-bottom: 65px;
+        .logo {
+            margin-bottom: 64px;
+            >img{
+                height: 80px;
+            }
+        }
+        .introduce-wrapper {
+            align-items: center;
+            gap: 42px;
+            .introduce-content {
+                >p:nth-child(1) {
+                    @include fonts.t1();
+                }
+                >p:nth-child(2) {
+                    @include fonts.h1();
+                    margin-bottom: 48px;
+                }
+                >p:nth-child(3), >p:nth-child(4) {
+                    @include fonts.p2();
+                }
+                >p:nth-child(4) {
+                    margin-bottom: 48px;
+                }
+                >p:nth-child(5) {
+                    @include fonts.p2();
+                    color: #4EBD09;
+                    margin-bottom: 48px;
+                    margin-right: 430px;
+                }
+                button{
+                    @include mainButton();
+                }
+            }
+        }
+    }
+}
