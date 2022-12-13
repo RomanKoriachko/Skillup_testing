@@ -161,10 +161,16 @@ table {
   .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(5) {
     margin-right: 160px;
   }
+  .main .benefit-section {
+    padding-top: 72px;
+  }
+  .main .benefit-section .benefit-wrapper .benefit-item {
+    padding: 0px 5px;
+  }
 }
 @media (max-width: 992px) {
   .container {
-    padding: 0px 15px;
+    padding: 0px 16px;
   }
   .main .introduce-section {
     padding: 48px 0px;
@@ -176,10 +182,6 @@ table {
     margin-right: 100px;
   }
   .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(2) {
-    font-family: "Exo 2";
-    font-weight: 800;
-    font-size: 36px;
-    line-height: 48px;
     margin-bottom: 32px;
   }
   .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(3), .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(4) {
@@ -194,6 +196,20 @@ table {
   }
   .main .introduce-section .introduce-wrapper .introduce-img {
     display: none;
+  }
+  .main .benefit-section .benefit-header {
+    font-family: "Exo 2";
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 130%;
+  }
+  .main .benefit-section .benefit-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .main .benefit-section .benefit-wrapper .benefit-item {
+    width: 450px;
   }
 }
 @media (max-width: 576px) {
@@ -219,6 +235,12 @@ table {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
+    width: 100%;
+  }
+  .main .benefit-section .benefit-wrapper .benefit-item {
+    padding: 0px 0px;
+  }
+  .main .benefit-section .benefit-wrapper .benefit-item {
     width: 100%;
   }
 }

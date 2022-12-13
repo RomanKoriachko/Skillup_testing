@@ -10,6 +10,12 @@
     font-size: 36px;
     line-height: 48px;
 }
+@mixin h3() {
+    font-family: 'Exo 2';
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 130%;
+}
 
 @mixin p1() {
     font-family: 'Exo 2';
