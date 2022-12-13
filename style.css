@@ -122,6 +122,40 @@ table {
   font-size: 18px;
   line-height: 26px;
 }
+.main .benefit-section {
+  padding-top: 104px;
+  text-align: center;
+}
+.main .benefit-section .benefit-header {
+  font-family: "Exo 2";
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 48px;
+}
+.main .benefit-section .benefit-wrapper {
+  gap: 24px;
+}
+.main .benefit-section .benefit-wrapper .benefit-item {
+  width: 410px;
+  padding: 0px 16px;
+}
+.main .benefit-section .benefit-wrapper .benefit-item > img {
+  margin-bottom: 12px;
+}
+.main .benefit-section .benefit-wrapper .benefit-item > p:nth-child(2) {
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+.main .benefit-section .benefit-wrapper .benefit-item > p:nth-child(3) {
+  font-family: "Exo 2";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
 
 @media (max-width: 1200px) {
   .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(5) {
