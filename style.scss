@@ -6,6 +6,7 @@
     height: 50px;
     background: #4EBD09;
     border-radius: 6px;
+    border: none;
     padding: 0px 12px;
     cursor: pointer;
     @include fonts.b1();
@@ -15,8 +16,9 @@
     box-sizing: border-box;
 }
 .container {
-    max-width: 1280px;
+    max-width: 1330px;
     margin: 0 auto;
+    padding: 0px 25px;
 }
 .row {
     display: flex;
@@ -56,10 +58,90 @@
                     @include fonts.p2();
                     color: #4EBD09;
                     margin-bottom: 48px;
-                    margin-right: 430px;
+                    margin-right: 422px;
                 }
                 button{
                     @include mainButton();
+                }
+            }
+        }
+    }
+}
+
+// Laptop
+@media(max-width: 1200px) {
+    .main{
+        .introduce-section {
+            .introduce-wrapper {
+                .introduce-content {
+                    >p:nth-child(5) {
+                        margin-right: 160px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Tablet
+@media(max-width: 992px) {
+    .container {
+        padding: 0px 15px;
+    }
+    .main{
+        .introduce-section {
+            padding: 48px 0px;
+            .logo {
+                margin-bottom: 48px;
+            }
+            .introduce-wrapper {
+                .introduce-content {
+                    margin-right: 100px;
+                    >p:nth-child(2) {
+                        @include fonts.h2();
+                        margin-bottom: 32px;
+                    }
+                    >p:nth-child(3), >p:nth-child(4) {
+                        display: none;
+                    }
+                    >p:nth-child(4) {
+                        margin-bottom: 32px;
+                    }
+                    >p:nth-child(5) {
+                        margin-right: 0px;
+                        margin-bottom: 32px;
+                    }
+                }
+                .introduce-img{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// Mobile
+@media(max-width: 576px) {
+    .main{
+        .introduce-section {
+            .introduce-wrapper {
+                .introduce-content {
+                    margin-right: 0px;
+                    >p:nth-child(2) {
+                        @include fonts.h2();
+                        margin-bottom: 32px;
+                    }
+                    >p:nth-child(4) {
+                        margin-bottom: 32px;
+                    }
+                    >p:nth-child(5) {
+                        margin-right: 0px;
+                        margin-bottom: 32px;
+                    }
+                    button{
+                        @include fonts.b2();
+                        width: 100%;
+                    }
                 }
             }
         }

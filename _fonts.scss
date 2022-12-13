@@ -55,3 +55,9 @@
     font-size: 18px;
     line-height: 26px;
 }
+@mixin b2() {
+    font-family: 'Exo 2';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
