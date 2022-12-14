@@ -134,6 +134,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  color: #0D1A30;
 }
 .main .benefit-section {
   text-align: center;
@@ -384,6 +385,25 @@ body {
 .main .numbers-section .numbers-comparison .numbers-comparison-item:first-child {
   border: none;
 }
+.main .sign-up-section {
+  padding: 48px 0px;
+  text-align: center;
+  background: #0D1A30;
+}
+.main .sign-up-section button {
+  width: 380px;
+  height: 50px;
+  background: #4EBD09;
+  border-radius: 6px;
+  border: none;
+  padding: 0px 12px;
+  cursor: pointer;
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #0D1A30;
+}
 
 @media (max-width: 1200px) {
   .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(5) {
@@ -549,5 +569,8 @@ body {
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
+  }
+  .main .sign-up-section button {
+    width: 100%;
   }
 }

@@ -71,6 +71,7 @@ body{
                 }
                 button{
                     @include mainButton();
+                    color: #0D1A30;
                 }
             }
         }
@@ -278,6 +279,15 @@ body{
             }
         }
     }
+    .sign-up-section {
+        padding: 48px 0px;
+        text-align: center;
+        background: #0D1A30;
+        button{
+            @include mainButton();
+            color: #0D1A30;
+        }
+    }
 }
 
 // Laptop
@@ -479,6 +489,11 @@ body{
         }
         .start-in-it {
             @include fonts.p2();
+        }
+        .sign-up-section {
+            button{
+                width: 100%;
+            }
         }
     }
 }
