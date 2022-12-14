@@ -62,6 +62,14 @@ table {
   display: flex;
 }
 
+.main .h2-header {
+  font-family: "Exo 2";
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 48px;
+  margin-top: 104px;
+  margin-bottom: 48px;
+}
 .main .introduce-section {
   background: #0D1A30;
   color: #ffffff;
@@ -123,15 +131,7 @@ table {
   line-height: 26px;
 }
 .main .benefit-section {
-  padding-top: 104px;
   text-align: center;
-}
-.main .benefit-section .benefit-header {
-  font-family: "Exo 2";
-  font-weight: 800;
-  font-size: 36px;
-  line-height: 48px;
-  margin-bottom: 48px;
 }
 .main .benefit-section .benefit-wrapper {
   gap: 24px;
@@ -156,16 +156,8 @@ table {
   font-size: 18px;
   line-height: 24px;
 }
-.main .who-is-section {
-  padding-top: 104px;
-}
 .main .who-is-section .who-is-header {
   text-align: center;
-  font-family: "Exo 2";
-  font-weight: 800;
-  font-size: 36px;
-  line-height: 48px;
-  margin-bottom: 48px;
 }
 .main .who-is-section .who-is-wrapper {
   gap: 32px;
@@ -260,13 +252,35 @@ table {
   line-height: 26px;
   color: #ffffff;
 }
+.main .how-to-know-section {
+  padding-bottom: 104px;
+}
+.main .how-to-know-section .how-to-know-header {
+  text-align: center;
+}
+.main .how-to-know-section .how-to-know-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.main .how-to-know-section .how-to-know-wrapper .how-to-know-item {
+  gap: 8px;
+}
+.main .how-to-know-section .how-to-know-wrapper .how-to-know-item .how-to-know-check-img {
+  min-width: 24px;
+  height: 24px;
+  background-image: url(images/check-circle.svg);
+}
+.main .how-to-know-section .how-to-know-wrapper .how-to-know-item .how-to-know-text {
+  font-family: "Exo 2";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
 
 @media (max-width: 1200px) {
   .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(5) {
     margin-right: 160px;
-  }
-  .main .benefit-section {
-    padding-top: 72px;
   }
   .main .benefit-section .benefit-wrapper .benefit-item {
     padding: 0px 5px;
@@ -275,6 +289,14 @@ table {
 @media (max-width: 992px) {
   .container {
     padding: 0px 16px;
+  }
+  .main .h2-header {
+    font-family: "Exo 2";
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 130%;
+    margin-top: 72px;
+    margin-bottom: 32px;
   }
   .main .introduce-section {
     padding: 48px 0px;
@@ -301,12 +323,6 @@ table {
   .main .introduce-section .introduce-wrapper .introduce-img {
     display: none;
   }
-  .main .benefit-section .benefit-header {
-    font-family: "Exo 2";
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 130%;
-  }
   .main .benefit-section .benefit-wrapper {
     flex-direction: column;
     align-items: center;
@@ -314,15 +330,6 @@ table {
   }
   .main .benefit-section .benefit-wrapper .benefit-item {
     width: 450px;
-  }
-  .main .who-is-section {
-    padding-top: 72px;
-  }
-  .main .who-is-section .who-is-header {
-    font-family: "Exo 2";
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 130%;
   }
   .main .who-is-section .who-is-wrapper {
     flex-direction: column;
@@ -339,6 +346,12 @@ table {
   }
   .main .who-is-section .who-is-wrapper .who-is-tablet-content {
     display: block;
+  }
+  .main .how-to-know-section {
+    padding-bottom: 48px;
+  }
+  .main .how-to-know-section .how-to-know-wrapper {
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 576px) {
@@ -371,9 +384,6 @@ table {
   }
   .main .benefit-section .benefit-wrapper .benefit-item {
     width: 100%;
-  }
-  .main .who-is-section .who-is-header {
-    margin-bottom: 32px;
   }
   .main .who-is-section .who-is-wrapper .who-is-text > p:nth-child(1) {
     margin-bottom: 32px;

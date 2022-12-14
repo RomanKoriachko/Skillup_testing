@@ -26,6 +26,11 @@
 
 // Desktop 
 .main{
+    .h2-header {
+        @include fonts.h2();
+        margin-top: 104px;
+        margin-bottom: 48px;
+    }
     .introduce-section {
         background: #0D1A30;
         color: #ffffff;
@@ -67,12 +72,7 @@
         }
     }
     .benefit-section {
-        padding-top: 104px;
         text-align: center;
-        .benefit-header {
-            @include fonts.h2();
-            margin-bottom: 48px;
-        }
         .benefit-wrapper {
             gap: 24px;
             .benefit-item {
@@ -92,11 +92,8 @@
         }
     }
     .who-is-section {
-        padding-top: 104px;
         .who-is-header {
             text-align: center;
-            @include fonts.h2();
-            margin-bottom: 48px;
         }
         .who-is-wrapper {
             gap: 32px;
@@ -169,6 +166,28 @@
             color: #ffffff;
         }
     }
+    .how-to-know-section {
+        padding-bottom: 104px;
+        .how-to-know-header {
+            text-align: center;
+        }
+        .how-to-know-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            .how-to-know-item {
+                gap: 8px;
+                .how-to-know-check-img {
+                    min-width: 24px;
+                    height: 24px;
+                    background-image: url(images/check-circle.svg);
+                }
+                .how-to-know-text {
+                    @include fonts.t2();
+                }
+            }
+        }
+    }
 }
 
 // Laptop
@@ -184,7 +203,6 @@
             }
         }
         .benefit-section {
-            padding-top: 72px;
             .benefit-wrapper {
                 .benefit-item {
                     padding: 0px 5px;
@@ -200,6 +218,11 @@
         padding: 0px 16px;
     }
     .main{
+        .h2-header {
+            @include fonts.h3();
+            margin-top: 72px;
+            margin-bottom: 32px;
+        }
         .introduce-section {
             padding: 48px 0px;
             .logo {
@@ -228,10 +251,6 @@
             }
         }
         .benefit-section {
-            .benefit-header {
-                @include fonts.h3();
-                
-            }
             .benefit-wrapper {
                 flex-direction: column;
                 align-items: center;
@@ -242,10 +261,6 @@
             }
         }
         .who-is-section {
-            padding-top: 72px;
-            .who-is-header {
-                @include fonts.h3();
-            }
             .who-is-wrapper {
                 flex-direction: column;
                 align-items: center;
@@ -261,6 +276,12 @@
                 .who-is-tablet-content {
                     display: block;
                 }
+            }
+        }
+        .how-to-know-section {
+            padding-bottom: 48px;
+            .how-to-know-wrapper {
+                grid-template-columns: 1fr;
             }
         }
     }
@@ -302,9 +323,6 @@
             }
         }
         .who-is-section {
-            .who-is-header {
-                margin-bottom: 32px;
-            }
             .who-is-wrapper {
                 .who-is-text{
                     >p:nth-child(1) {
