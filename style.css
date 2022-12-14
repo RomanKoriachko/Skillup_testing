@@ -62,6 +62,10 @@ table {
   display: flex;
 }
 
+body {
+  color: #0D1A30;
+}
+
 .main .h2-header {
   font-family: "Exo 2";
   font-weight: 800;
@@ -311,6 +315,75 @@ table {
   line-height: 24px;
   margin-bottom: 24px;
 }
+.main .numbers-section {
+  padding-bottom: 104px;
+}
+.main .numbers-section .numbers-header {
+  margin-left: 170px;
+  margin-right: 170px;
+}
+.main .numbers-section .numbers-row {
+  margin-bottom: 32px;
+}
+.main .numbers-section .numbers-row .numbers-item {
+  text-align: center;
+  width: 330px;
+}
+.main .numbers-section .numbers-row .numbers-item > p:nth-child(1) {
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 124%;
+  color: #4EBD09;
+}
+.main .numbers-section .numbers-row .numbers-item > p:nth-child(2) {
+  font-family: "Exo 2";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 124%;
+}
+.main .numbers-section .numbers-comparison {
+  padding: 48px 38px;
+  background: linear-gradient(126.48deg, #FFE2D0 -25%, #FCF9E8 41.69%);
+  border-radius: 12px;
+}
+.main .numbers-section .numbers-comparison .numbers-comparison-item {
+  justify-content: space-between;
+  border-bottom: 1px solid #D9D9D9;
+}
+.main .numbers-section .numbers-comparison .numbers-comparison-item > div {
+  margin: 22px 0px;
+  width: 25%;
+  text-align: center;
+}
+.main .numbers-section .numbers-comparison .numbers-comparison-item .numbers-comparison-text1 {
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+.main .numbers-section .numbers-comparison .numbers-comparison-item .numbers-comparsion-long-text {
+  margin: 10px 0px;
+}
+.main .numbers-section .numbers-comparison .numbers-comparison-item .numbers-comparison-text2 {
+  font-family: "Exo 2";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+.main .numbers-section .numbers-comparison .numbers-comparison-item .numbers-check-img {
+  background-image: url(images/check.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main .numbers-section .numbers-comparison .numbers-comparison-item .numbers-x-img {
+  background-image: url(images/x.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main .numbers-section .numbers-comparison .numbers-comparison-item:first-child {
+  border: none;
+}
 
 @media (max-width: 1200px) {
   .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(5) {
@@ -318,6 +391,10 @@ table {
   }
   .main .benefit-section .benefit-wrapper .benefit-item {
     padding: 0px 5px;
+  }
+  .main .numbers-section .numbers-header {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 @media (max-width: 992px) {
@@ -396,6 +473,25 @@ table {
   }
   .main .video-section .video-section-wrapper .video-section-text {
     width: 100%;
+  }
+  .main .numbers-section {
+    padding-bottom: 48px;
+  }
+  .main .numbers-section .numbers-row {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+  .main .numbers-section .numbers-row .numbers-item {
+    width: 75%;
+  }
+}
+@media (max-width: 750px) {
+  .main .numbers-section .numbers-row {
+    margin-bottom: 0px;
+  }
+  .main .numbers-section .numbers-comparison {
+    display: none;
   }
 }
 @media (max-width: 576px) {
