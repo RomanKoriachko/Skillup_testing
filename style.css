@@ -156,6 +156,110 @@ table {
   font-size: 18px;
   line-height: 24px;
 }
+.main .who-is-section {
+  padding-top: 104px;
+}
+.main .who-is-section .who-is-header {
+  text-align: center;
+  font-family: "Exo 2";
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 48px;
+}
+.main .who-is-section .who-is-wrapper {
+  gap: 32px;
+}
+.main .who-is-section .who-is-wrapper .who-is-text {
+  width: 50%;
+}
+.main .who-is-section .who-is-wrapper .who-is-text > p:nth-child(1) {
+  font-family: "Exo 2";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.main .who-is-section .who-is-wrapper .who-is-text > p:nth-child(2) {
+  font-family: "Exo 2";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.main .who-is-section .who-is-wrapper .who-is-scales {
+  width: 50%;
+}
+.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-row {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-row .scale-text > p:nth-child(1) {
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-row .scale-text > p:nth-child(2) {
+  font-family: "Exo 2";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 124%;
+}
+.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-row .scale-salary {
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+}
+.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-parent {
+  position: relative;
+  width: 100%;
+  height: 24px;
+  border-radius: 6px;
+  background: linear-gradient(147.71deg, #F0F5E0 20.89%, #E0F5E3 80.64%);
+  margin-bottom: 24px;
+}
+.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-parent .scale-children {
+  position: absolute;
+  height: 100%;
+  background: #4EBD09;
+  border-radius: 6px;
+}
+.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-parent .scale-children-1 {
+  width: 22%;
+}
+.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-parent .scale-children-2 {
+  width: 68%;
+}
+.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-parent .scale-children-3 {
+  width: 100%;
+}
+.main .who-is-section .who-is-wrapper .who-is-tablet-content {
+  display: none;
+}
+.main .who-is-section .who-is-tablet-text {
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.main .who-is-section .who-is-tablet-btn {
+  width: 380px;
+  height: 50px;
+  background: #4EBD09;
+  border-radius: 6px;
+  border: none;
+  padding: 0px 12px;
+  cursor: pointer;
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
+}
 
 @media (max-width: 1200px) {
   .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(5) {
@@ -211,6 +315,31 @@ table {
   .main .benefit-section .benefit-wrapper .benefit-item {
     width: 450px;
   }
+  .main .who-is-section {
+    padding-top: 72px;
+  }
+  .main .who-is-section .who-is-header {
+    font-family: "Exo 2";
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 130%;
+  }
+  .main .who-is-section .who-is-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .who-is-section .who-is-wrapper .who-is-text {
+    width: 100%;
+  }
+  .main .who-is-section .who-is-wrapper .who-is-scales {
+    width: 100%;
+  }
+  .main .who-is-section .who-is-wrapper .who-is-desktop-content {
+    display: none;
+  }
+  .main .who-is-section .who-is-wrapper .who-is-tablet-content {
+    display: block;
+  }
 }
 @media (max-width: 576px) {
   .main .introduce-section .introduce-wrapper .introduce-content {
@@ -242,5 +371,27 @@ table {
   }
   .main .benefit-section .benefit-wrapper .benefit-item {
     width: 100%;
+  }
+  .main .who-is-section .who-is-header {
+    margin-bottom: 32px;
+  }
+  .main .who-is-section .who-is-wrapper .who-is-text > p:nth-child(1) {
+    margin-bottom: 32px;
+  }
+  .main .who-is-section .who-is-wrapper .who-is-text > p:nth-child(2) {
+    margin-bottom: 0;
+  }
+  .main .who-is-section .who-is-wrapper .who-is-scales {
+    margin-bottom: -24px;
+  }
+  .main .who-is-section .who-is-wrapper .who-is-tablet-text {
+    margin-bottom: 32px;
+  }
+  .main .who-is-section .who-is-wrapper .who-is-tablet-btn {
+    width: 100%;
+    font-family: "Exo 2";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
   }
 }

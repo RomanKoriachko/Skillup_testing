@@ -91,6 +91,84 @@
             }
         }
     }
+    .who-is-section {
+        padding-top: 104px;
+        .who-is-header {
+            text-align: center;
+            @include fonts.h2();
+            margin-bottom: 48px;
+        }
+        .who-is-wrapper {
+            gap: 32px;
+            .who-is-text {
+                width: 50%;
+                >p:nth-child(1) {
+                    @include fonts.t2();
+                    margin-bottom: 24px;
+                }
+                >p:nth-child(2) {
+                    @include fonts.t2();
+                    margin-bottom: 24px;
+                }
+            }
+            .who-is-scales {
+                width: 50%;
+                .scale-item {
+                    .scale-row {
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 16px;
+                        .scale-text {
+                            >p:nth-child(1) {
+                                @include fonts.p2();
+                            }
+                            >p:nth-child(2) {
+                                @include fonts.t4();
+                            }
+                        }
+                        .scale-salary {
+                            @include fonts.p1();
+                        }
+                    }
+                    .scale-parent {
+                        position: relative;
+                        width: 100%;
+                        height: 24px;
+                        border-radius: 6px;
+                        background: linear-gradient(147.71deg, #F0F5E0 20.89%, #E0F5E3 80.64%);
+                        margin-bottom: 24px;
+                        .scale-children {
+                            position: absolute;
+                            height: 100%;
+                            background: #4EBD09;
+                            border-radius: 6px;
+                            
+                        }
+                        .scale-children-1 {
+                            width: 22%;
+                        }
+                        .scale-children-2 {
+                            width: 68%;
+                        }
+                        .scale-children-3 {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .who-is-tablet-content {
+                display: none;
+            }
+        }
+        .who-is-tablet-text {
+            @include fonts.t1();
+            margin-bottom: 24px;
+        }
+        .who-is-tablet-btn {
+            @include mainButton();
+            color: #ffffff;
+        }
+    }
 }
 
 // Laptop
@@ -163,6 +241,28 @@
                 }
             }
         }
+        .who-is-section {
+            padding-top: 72px;
+            .who-is-header {
+                @include fonts.h3();
+            }
+            .who-is-wrapper {
+                flex-direction: column;
+                align-items: center;
+                .who-is-text {
+                    width: 100%;
+                }
+                .who-is-scales {
+                    width: 100%;
+                }
+                .who-is-desktop-content {
+                    display: none;
+                }
+                .who-is-tablet-content {
+                    display: block;
+                }
+            }
+        }
     }
 }
 
@@ -198,6 +298,31 @@
                 }
                 .benefit-item {
                     width: 100%;
+                }
+            }
+        }
+        .who-is-section {
+            .who-is-header {
+                margin-bottom: 32px;
+            }
+            .who-is-wrapper {
+                .who-is-text{
+                    >p:nth-child(1) {
+                        margin-bottom: 32px;
+                    }
+                    >p:nth-child(2) {
+                        margin-bottom: 0;
+                    }
+                }
+                .who-is-scales {
+                    margin-bottom: -24px;
+                }
+                .who-is-tablet-text {
+                    margin-bottom: 32px;
+                }
+                .who-is-tablet-btn {
+                    width: 100%;
+                    @include fonts.b2();
                 }
             }
         }
