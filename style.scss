@@ -30,6 +30,7 @@
         @include fonts.h2();
         margin-top: 104px;
         margin-bottom: 48px;
+        text-align: center;
     }
     .introduce-section {
         background: #0D1A30;
@@ -177,13 +178,42 @@
             gap: 24px;
             .how-to-know-item {
                 gap: 8px;
-                .how-to-know-check-img {
-                    min-width: 24px;
-                    height: 24px;
-                    background-image: url(images/check-circle.svg);
-                }
                 .how-to-know-text {
                     @include fonts.t2();
+                }
+            }
+        }
+    }
+    .check-img {
+        min-width: 24px;
+        height: 24px;
+        background-image: url(images/check-circle.svg);
+    }
+    .start-in-it {
+        background: #0D1A30;
+        color: #ffffff;
+        text-align: center;
+        @include fonts.h2();
+        padding: 48px 0px;
+    }
+    .video-section {
+        .video {
+            width: 50%;
+            height: 354px;
+            background: #8090AB;
+            border-radius: 12px;
+        }
+        .video-section-wrapper {
+            align-items: center;
+            justify-content: center;
+            gap: 32px;
+            .video-section-text {
+                width: 50%;
+                justify-self: center;
+                .video-section-item {
+                    gap: 8px;
+                    @include fonts.t2();
+                    margin-bottom: 24px;
                 }
             }
         }
@@ -284,6 +314,18 @@
                 grid-template-columns: 1fr;
             }
         }
+        .video-section {
+            .video-section-wrapper {
+                flex-direction: column;
+                gap: 24px;  
+                .video {
+                    width: 100%;
+                }
+                .video-section-text {
+                    width: 100%;
+                }
+            }
+        }
     }
 }
 
@@ -343,6 +385,9 @@
                     @include fonts.b2();
                 }
             }
+        }
+        .start-in-it {
+            @include fonts.p2();
         }
     }
 }

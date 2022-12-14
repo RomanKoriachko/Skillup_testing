@@ -69,6 +69,7 @@ table {
   line-height: 48px;
   margin-top: 104px;
   margin-bottom: 48px;
+  text-align: center;
 }
 .main .introduce-section {
   background: #0D1A30;
@@ -266,16 +267,49 @@ table {
 .main .how-to-know-section .how-to-know-wrapper .how-to-know-item {
   gap: 8px;
 }
-.main .how-to-know-section .how-to-know-wrapper .how-to-know-item .how-to-know-check-img {
-  min-width: 24px;
-  height: 24px;
-  background-image: url(images/check-circle.svg);
-}
 .main .how-to-know-section .how-to-know-wrapper .how-to-know-item .how-to-know-text {
   font-family: "Exo 2";
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
+}
+.main .check-img {
+  min-width: 24px;
+  height: 24px;
+  background-image: url(images/check-circle.svg);
+}
+.main .start-in-it {
+  background: #0D1A30;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Exo 2";
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 48px;
+  padding: 48px 0px;
+}
+.main .video-section .video {
+  width: 50%;
+  height: 354px;
+  background: #8090AB;
+  border-radius: 12px;
+}
+.main .video-section .video-section-wrapper {
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+.main .video-section .video-section-wrapper .video-section-text {
+  width: 50%;
+  justify-self: center;
+}
+.main .video-section .video-section-wrapper .video-section-text .video-section-item {
+  gap: 8px;
+  font-family: "Exo 2";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 24px;
 }
 
 @media (max-width: 1200px) {
@@ -353,6 +387,16 @@ table {
   .main .how-to-know-section .how-to-know-wrapper {
     grid-template-columns: 1fr;
   }
+  .main .video-section .video-section-wrapper {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .main .video-section .video-section-wrapper .video {
+    width: 100%;
+  }
+  .main .video-section .video-section-wrapper .video-section-text {
+    width: 100%;
+  }
 }
 @media (max-width: 576px) {
   .main .introduce-section .introduce-wrapper .introduce-content {
@@ -403,5 +447,11 @@ table {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
+  }
+  .main .start-in-it {
+    font-family: "Exo 2";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
   }
 }
