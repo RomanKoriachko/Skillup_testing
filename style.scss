@@ -303,6 +303,63 @@ body{
             margin-top: 32px;
         }
     }
+    .form-section {
+        background: #0D1A30;
+        color: #ffffff;
+        padding: 48px 0px;
+        .form-section-wrapper {
+            align-items: center;
+            gap: 32px;
+            .form-section-text {
+                width: 50%;
+                >p:nth-child(1) {
+                    @include fonts.h2();
+                    margin-bottom: 32px;
+                }
+                >p:nth-child(2) {
+                    @include fonts.p2();
+                    margin-bottom: 32px;
+                }
+                >p:nth-child(3) {
+                    @include fonts.p2();
+                    color: #4EBD09;
+                }
+            }
+            .form {
+                width: 50%;
+                background: #FFFFFF;
+                border-radius: 12px;
+                padding: 32px;
+                color: #0D1A30;
+                .form-input {
+                    flex-direction: column;
+                    gap: 8px;
+                    margin-bottom: 24px;
+                    label {
+                        @include fonts.b2();
+                    }
+                    input{
+                        @include fonts.t2();
+                        border: 1px solid #0D1A30;
+                        border-radius: 6px;
+                        padding: 13px 16px;
+                        caret-color: #4EBD09;
+                        &:focus {
+                            outline-color: #4EBD09;
+                        }
+                    }
+                    &:focus-within {
+                        color: #4EBD09;
+                    }
+                }
+                button {
+                    @include mainButton();
+                    margin-top: 24px;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
 }
 
 // Laptop
@@ -437,6 +494,27 @@ body{
                 margin-top: 24px;
             }
         }
+        .form-section {
+            .form-section-wrapper {
+                flex-direction: column;
+                .form-section-text {
+                    width: 100%;
+                    .form-section-text-hide-tablet {
+                        display: none;
+                    }
+                    >p:nth-child(1) {
+                        @include fonts.p2();
+                        margin-bottom: 32px;
+                    }
+                }
+                .form {
+                    width: 70%;
+                    button{
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -517,11 +595,27 @@ body{
         .sign-up-section {
             button{
                 width: 100%;
+                @include fonts.b2();
             }
         }
         .benefits-section {
             .benefits-footer {
                 text-align: left;
+            }
+        }
+        .form-section {
+            .form-section-wrapper {
+                gap: 24px;
+                .form {
+                    width: 100%;
+                    background: transparent;
+                    color: #ffffff;
+                    padding: 0px;
+                    button{
+                        @include fonts.b2();
+                        color: #0D1A30;
+                    }
+                }
             }
         }
     }

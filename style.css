@@ -423,6 +423,88 @@ body {
   text-align: center;
   margin-top: 32px;
 }
+.main .form-section {
+  background: #0D1A30;
+  color: #ffffff;
+  padding: 48px 0px;
+}
+.main .form-section .form-section-wrapper {
+  align-items: center;
+  gap: 32px;
+}
+.main .form-section .form-section-wrapper .form-section-text {
+  width: 50%;
+}
+.main .form-section .form-section-wrapper .form-section-text > p:nth-child(1) {
+  font-family: "Exo 2";
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 32px;
+}
+.main .form-section .form-section-wrapper .form-section-text > p:nth-child(2) {
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+.main .form-section .form-section-wrapper .form-section-text > p:nth-child(3) {
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #4EBD09;
+}
+.main .form-section .form-section-wrapper .form {
+  width: 50%;
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 32px;
+  color: #0D1A30;
+}
+.main .form-section .form-section-wrapper .form .form-input {
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.main .form-section .form-section-wrapper .form .form-input label {
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.main .form-section .form-section-wrapper .form .form-input input {
+  font-family: "Exo 2";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  border: 1px solid #0D1A30;
+  border-radius: 6px;
+  padding: 13px 16px;
+  caret-color: #4EBD09;
+}
+.main .form-section .form-section-wrapper .form .form-input input:focus {
+  outline-color: #4EBD09;
+}
+.main .form-section .form-section-wrapper .form .form-input:focus-within {
+  color: #4EBD09;
+}
+.main .form-section .form-section-wrapper .form button {
+  width: 380px;
+  height: 50px;
+  background: #4EBD09;
+  border-radius: 6px;
+  border: none;
+  padding: 0px 12px;
+  cursor: pointer;
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 24px;
+  color: #ffffff;
+}
 
 @media (max-width: 1200px) {
   .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(5) {
@@ -533,6 +615,28 @@ body {
   .main .benefits-section .benefits-footer {
     margin-top: 24px;
   }
+  .main .form-section .form-section-wrapper {
+    flex-direction: column;
+  }
+  .main .form-section .form-section-wrapper .form-section-text {
+    width: 100%;
+  }
+  .main .form-section .form-section-wrapper .form-section-text .form-section-text-hide-tablet {
+    display: none;
+  }
+  .main .form-section .form-section-wrapper .form-section-text > p:nth-child(1) {
+    font-family: "Exo 2";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 32px;
+  }
+  .main .form-section .form-section-wrapper .form {
+    width: 70%;
+  }
+  .main .form-section .form-section-wrapper .form button {
+    width: 100%;
+  }
 }
 @media (max-width: 750px) {
   .main .numbers-section .numbers-row {
@@ -600,8 +704,28 @@ body {
   }
   .main .sign-up-section button {
     width: 100%;
+    font-family: "Exo 2";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
   }
   .main .benefits-section .benefits-footer {
     text-align: left;
+  }
+  .main .form-section .form-section-wrapper {
+    gap: 24px;
+  }
+  .main .form-section .form-section-wrapper .form {
+    width: 100%;
+    background: transparent;
+    color: #ffffff;
+    padding: 0px;
+  }
+  .main .form-section .form-section-wrapper .form button {
+    font-family: "Exo 2";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0D1A30;
   }
 }
