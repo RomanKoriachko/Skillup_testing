@@ -10,6 +10,12 @@
     padding: 0px 12px;
     cursor: pointer;
     @include fonts.b1();
+    transition: .3s all;
+    overflow: hidden;
+    box-shadow: none;
+    &:hover {
+        transform: translateY(10%);
+    }
 }
 
 *{
@@ -144,15 +150,24 @@ body{
                             height: 100%;
                             background: #4EBD09;
                             border-radius: 6px;
-                            
+                            transition: 1s all;
                         }
-                        .scale-children-1 {
+                        .scale-children-1.hide {
+                            width: 0%;
+                        }
+                        .scale-children-1.show {
                             width: 22%;
                         }
-                        .scale-children-2 {
+                        .scale-children-2.hide {
+                            width: 0%;
+                        }
+                        .scale-children-2.show {
                             width: 68%;
                         }
-                        .scale-children-3 {
+                        .scale-children-3.hide {
+                            width: 0%;
+                        }
+                        .scale-children-3.show {
                             width: 100%;
                         }
                     }
@@ -169,6 +184,9 @@ body{
         .who-is-tablet-btn {
             @include mainButton();
             color: #ffffff;
+            // &:hover {
+            //     background: #43a00a;
+            // }
         }
     }
     .how-to-know-section {
@@ -335,6 +353,7 @@ body{
                     flex-direction: column;
                     gap: 8px;
                     margin-bottom: 24px;
+                    transition: .3s all;
                     label {
                         @include fonts.b2();
                     }
@@ -412,11 +431,54 @@ body{
                         .fb-icon {
                             min-width: 26px;
                             height: 26px;
+                            background-size: cover;
                             background-image: url(images/facebook.svg);
+                            transition: .3s all;
+                            &:hover {
+                                transform: scale(1.2);
+                            }
                         }
                     }
                 }
             }
+        }
+    }
+}
+footer {
+    padding: 48px 0px;
+    background: #0D1A30;
+    color: #ffffff;
+    text-align: center;
+    .footer-wrapper {
+        justify-content: space-around;
+        @include fonts.t4();
+        margin-bottom: 32px;
+    }
+    .footer-buttons {
+        >button{
+            width: 26px;
+            height: 26px;
+            border: none;
+            margin-right: 12px;
+            cursor: pointer;
+            background: transparent;
+            background-size: cover;
+            transition: .3s all;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+        .facebook-btn {
+            background-image: url(images/facebook.svg);
+        }
+        .linkedin-btn {
+            background-image: url(images/linkedin.svg);
+        }
+        .instargam-btn {
+            background-image: url(images/Instagram.svg);
+        }
+        .youtube-btn {
+            background-image: url(images/Youtube.svg);
         }
     }
 }
