@@ -181,7 +181,6 @@ body{
             grid-template-columns: repeat(3, 1fr);
             gap: 24px;
             .how-to-know-item {
-                gap: 8px;
                 .how-to-know-text {
                     @include fonts.t2();
                 }
@@ -192,6 +191,7 @@ body{
         min-width: 24px;
         height: 24px;
         background-image: url(images/check-circle.svg);
+        margin-right: 8px;
     }
     .start-in-it {
         background: #0D1A30;
@@ -215,7 +215,6 @@ body{
                 width: 50%;
                 justify-self: center;
                 .video-section-item {
-                    gap: 8px;
                     @include fonts.t2();
                     margin-bottom: 24px;
                 }
@@ -286,6 +285,22 @@ body{
         button{
             @include mainButton();
             color: #0D1A30;
+        }
+    }
+    .benefits-section {
+        padding-bottom: 104px;
+        .benefits-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            .benefits-item {
+                @include fonts.t2();
+            } 
+        }
+        .benefits-footer {
+            @include fonts.p2();
+            text-align: center;
+            margin-top: 32px;
         }
     }
 }
@@ -413,6 +428,15 @@ body{
                 }
             }
         }
+        .benefits-section {
+            padding-bottom: 48px;
+            .benefits-wrapper {
+                grid-template-columns: 1fr;
+            }
+            .benefits-footer {
+                margin-top: 24px;
+            }
+        }
     }
 }
 
@@ -493,6 +517,11 @@ body{
         .sign-up-section {
             button{
                 width: 100%;
+            }
+        }
+        .benefits-section {
+            .benefits-footer {
+                text-align: left;
             }
         }
     }
