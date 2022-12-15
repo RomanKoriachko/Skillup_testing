@@ -505,6 +505,68 @@ body {
   margin-top: 24px;
   color: #ffffff;
 }
+.main .review-section {
+  padding-bottom: 48px;
+}
+.main .review-section .slider .slider-item {
+  margin-right: 24px;
+}
+.main .review-section .slider .slider-item .review-text-author {
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+.main .review-section .slider .slider-item .review-text-position {
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.main .review-section .slider .slider-item .video-wrapper .video {
+  max-width: 410px;
+  height: 224px;
+  background: #8090AB;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.main .review-section .slider .slider-item .review-wrapper {
+  gap: 24px;
+  width: 410px;
+  margin-top: 48px;
+}
+.main .review-section .slider .slider-item .review-wrapper .review-avatar {
+  min-width: 85px;
+  height: 85px;
+}
+.main .review-section .slider .slider-item .review-wrapper .review-avatar-1 {
+  background-image: url(images/user1-img.svg);
+}
+.main .review-section .slider .slider-item .review-wrapper .review-avatar-2 {
+  background-image: url(images/user2-img.svg);
+}
+.main .review-section .slider .slider-item .review-wrapper .review-avatar-3 {
+  background-image: url(images/user3-img.svg);
+}
+.main .review-section .slider .slider-item .review-wrapper .review-avatar-4 {
+  background-image: url(images/user4-img.svg);
+}
+.main .review-section .slider .slider-item .review-wrapper .review-text .author-and-fb-wrapper {
+  align-items: center;
+  justify-content: space-between;
+}
+.main .review-section .slider .slider-item .review-wrapper .review-text > p {
+  font-family: "Exo 2";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 124%;
+  margin-bottom: 16px;
+}
+.main .review-section .slider .slider-item .review-wrapper .review-text .fb-icon {
+  min-width: 26px;
+  height: 26px;
+  background-image: url(images/facebook.svg);
+}
 
 @media (max-width: 1200px) {
   .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(5) {
@@ -637,6 +699,19 @@ body {
   .main .form-section .form-section-wrapper .form button {
     width: 100%;
   }
+  .main .review-section .slider .slider-item .review-wrapper {
+    flex-direction: column;
+  }
+  .main .review-section .slider .slider-item .review-wrapper .review-avatar {
+    width: 85px;
+  }
+  .main .review-section .slider .slider-item .review-wrapper .review-text .fb-icon {
+    min-width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 @media (max-width: 750px) {
   .main .numbers-section .numbers-row {
@@ -727,5 +802,20 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: #0D1A30;
+  }
+  .main .review-section .review-section-header {
+    padding: 0px 16px;
+  }
+  .main .review-section .slider {
+    padding: 0px 16px;
+  }
+  .main .review-section .slider .slider-item {
+    margin-right: 16px;
+  }
+  .main .review-section .slider .slider-item .video-wrapper .video {
+    max-width: 310px;
+  }
+  .main .review-section .slider .slider-item .review-wrapper {
+    max-width: 310px;
   }
 }
