@@ -3,13 +3,24 @@
 let mainButtons = document.querySelectorAll(".main-btn");
 let formSection = document.querySelector(".form-section");
 
-for (let i = 0; i < mainButtons.length; i++) {
-  mainButtons[i].addEventListener("click", function () {
-    window.scrollTo({
-      top: formSection.getBoundingClientRect().top + window.pageYOffset - 100,
-      behavior: "smooth",
+if (window.screen.height > 1100) {
+  for (let i = 0; i < mainButtons.length; i++) {
+    mainButtons[i].addEventListener("click", function () {
+      window.scrollTo({
+        top: formSection.getBoundingClientRect().top + window.pageYOffset - 100,
+        behavior: "smooth",
+      });
     });
-  });
+  }
+} else {
+  for (let i = 0; i < mainButtons.length; i++) {
+    mainButtons[i].addEventListener("click", function () {
+      window.scrollTo({
+        top: formSection.getBoundingClientRect().top + window.pageYOffset,
+        behavior: "smooth",
+      });
+    });
+  }
 }
 
 let whoIsSection = document.querySelector(".who-is-section");
@@ -18,8 +29,6 @@ let scale2 = document.querySelector(".scale-children-2");
 let scale3 = document.querySelector(".scale-children-3");
 
 window.addEventListener("scroll", function () {
-  console.log(whoIsSection.getBoundingClientRect().top);
-  console.log(window.screen.height);
   if (window.screen.height > 1100) {
     if (
       whoIsSection.getBoundingClientRect().top - window.screen.height / 2 <
