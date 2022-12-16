@@ -860,6 +860,12 @@ footer .footer-buttons .youtube-btn {
     font-size: 24px;
     line-height: 32px;
   }
+  .main .video-section .video {
+    height: 230px;
+  }
+  .main .video-section .video .video-youtube {
+    border-radius: 12px;
+  }
   .main .sign-up-section button {
     width: 100%;
     font-family: "Exo 2";

@@ -737,6 +737,14 @@ footer {
         .start-in-it {
             @include fonts.p2();
         }
+        .video-section {
+            .video {
+                height: 230px;
+                .video-youtube {
+                    border-radius: 12px;
+                }
+            }
+        }
         .sign-up-section {
             button{
                 width: 100%;
