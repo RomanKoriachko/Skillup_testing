@@ -57,7 +57,7 @@ window.addEventListener("scroll", function () {
     }
   } else {
     if (
-      whoIsSection.getBoundingClientRect().top - window.screen.height / 6 <
+      whoIsSection.getBoundingClientRect().top - window.screen.height / 10 <
       0
     ) {
       scale1.classList.add("show");
@@ -69,7 +69,7 @@ window.addEventListener("scroll", function () {
     if (
       whoIsSection.getBoundingClientRect().top +
         100 -
-        window.screen.height / 6 <
+        window.screen.height / 10 <
       0
     ) {
       scale2.classList.add("show");
@@ -81,7 +81,7 @@ window.addEventListener("scroll", function () {
     if (
       whoIsSection.getBoundingClientRect().top +
         200 -
-        window.screen.height / 6 <
+        window.screen.height / 10 <
       0
     ) {
       scale3.classList.add("show");
