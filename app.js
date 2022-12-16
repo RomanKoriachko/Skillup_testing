@@ -18,32 +18,78 @@ let scale2 = document.querySelector(".scale-children-2");
 let scale3 = document.querySelector(".scale-children-3");
 
 window.addEventListener("scroll", function () {
-  if (whoIsSection.getBoundingClientRect().top - window.screen.height / 2 < 0) {
-    scale1.classList.add("show");
-    scale1.classList.remove("hide");
+  console.log(whoIsSection.getBoundingClientRect().top);
+  console.log(window.screen.height);
+  if (window.screen.height > 1100) {
+    if (
+      whoIsSection.getBoundingClientRect().top - window.screen.height / 2 <
+      0
+    ) {
+      scale1.classList.add("show");
+      scale1.classList.remove("hide");
+    } else {
+      scale1.classList.add("hide");
+      scale1.classList.remove("show");
+    }
+    if (
+      whoIsSection.getBoundingClientRect().top +
+        100 -
+        window.screen.height / 2 <
+      0
+    ) {
+      scale2.classList.add("show");
+      scale2.classList.remove("hide");
+    } else {
+      scale2.classList.add("hide");
+      scale2.classList.remove("show");
+    }
+    if (
+      whoIsSection.getBoundingClientRect().top +
+        200 -
+        window.screen.height / 2 <
+      0
+    ) {
+      scale3.classList.add("show");
+      scale3.classList.remove("hide");
+    } else {
+      scale3.classList.add("hide");
+      scale3.classList.remove("show");
+    }
   } else {
-    scale1.classList.add("hide");
-    scale1.classList.remove("show");
-  }
-  if (
-    whoIsSection.getBoundingClientRect().top + 100 - window.screen.height / 2 <
-    0
-  ) {
-    scale2.classList.add("show");
-    scale2.classList.remove("hide");
-  } else {
-    scale2.classList.add("hide");
-    scale2.classList.remove("show");
-  }
-  if (
-    whoIsSection.getBoundingClientRect().top + 200 - window.screen.height / 2 <
-    0
-  ) {
-    scale3.classList.add("show");
-    scale3.classList.remove("hide");
-  } else {
-    scale3.classList.add("hide");
-    scale3.classList.remove("show");
+    if (
+      whoIsSection.getBoundingClientRect().top - window.screen.height / 6 <
+      0
+    ) {
+      scale1.classList.add("show");
+      scale1.classList.remove("hide");
+    } else {
+      scale1.classList.add("hide");
+      scale1.classList.remove("show");
+    }
+    if (
+      whoIsSection.getBoundingClientRect().top +
+        100 -
+        window.screen.height / 6 <
+      0
+    ) {
+      scale2.classList.add("show");
+      scale2.classList.remove("hide");
+    } else {
+      scale2.classList.add("hide");
+      scale2.classList.remove("show");
+    }
+    if (
+      whoIsSection.getBoundingClientRect().top +
+        200 -
+        window.screen.height / 6 <
+      0
+    ) {
+      scale3.classList.add("show");
+      scale3.classList.remove("hide");
+    } else {
+      scale3.classList.add("hide");
+      scale3.classList.remove("show");
+    }
   }
 });
 
