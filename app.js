@@ -18,10 +18,6 @@ let scale2 = document.querySelector(".scale-children-2");
 let scale3 = document.querySelector(".scale-children-3");
 
 window.addEventListener("scroll", function () {
-  //   console.log(window.screen.height);
-  console.log(
-    whoIsSection.getBoundingClientRect().top - window.screen.height / 2
-  );
   if (whoIsSection.getBoundingClientRect().top - window.screen.height / 2 < 0) {
     scale1.classList.add("show");
     scale1.classList.remove("hide");
