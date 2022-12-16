@@ -319,6 +319,9 @@ body {
   background: #8090AB;
   border-radius: 12px;
 }
+.main .video-section .video .video-youtube {
+  border-radius: 12px;
+}
 .main .video-section .video-section-wrapper {
   align-items: center;
   justify-content: center;
