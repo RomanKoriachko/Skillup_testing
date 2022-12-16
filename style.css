@@ -611,13 +611,13 @@ body {
   transform: scale(1.2);
 }
 
-footer {
+.footer {
   padding: 48px 0px;
   background: #0D1A30;
   color: #ffffff;
   text-align: center;
 }
-footer .footer-wrapper {
+.footer .footer-wrapper {
   justify-content: space-around;
   font-family: "Exo 2";
   font-weight: 400;
@@ -625,7 +625,7 @@ footer .footer-wrapper {
   line-height: 124%;
   margin-bottom: 32px;
 }
-footer .footer-buttons > button {
+.footer .footer-buttons > button {
   width: 26px;
   height: 26px;
   border: none;
@@ -635,19 +635,19 @@ footer .footer-buttons > button {
   background-size: cover;
   transition: 0.3s all;
 }
-footer .footer-buttons > button:hover {
+.footer .footer-buttons > button:hover {
   transform: scale(1.2);
 }
-footer .footer-buttons .facebook-btn {
+.footer .footer-buttons .facebook-btn {
   background-image: url(images/facebook.svg);
 }
-footer .footer-buttons .linkedin-btn {
+.footer .footer-buttons .linkedin-btn {
   background-image: url(images/linkedin.svg);
 }
-footer .footer-buttons .instargam-btn {
+.footer .footer-buttons .instargam-btn {
   background-image: url(images/Instagram.svg);
 }
-footer .footer-buttons .youtube-btn {
+.footer .footer-buttons .youtube-btn {
   background-image: url(images/Youtube.svg);
 }
 
@@ -795,6 +795,10 @@ footer .footer-buttons .youtube-btn {
     background-repeat: no-repeat;
     background-size: contain;
   }
+  .footer .footer-wrapper {
+    flex-direction: column;
+    gap: 32px;
+  }
 }
 @media (max-width: 750px) {
   .main .numbers-section .numbers-row {
@@ -906,5 +910,9 @@ footer .footer-buttons .youtube-btn {
   }
   .main .review-section .slider .slider-item .review-wrapper {
     max-width: 310px;
+  }
+  .footer .footer-buttons > button {
+    width: 40px;
+    height: 40px;
   }
 }
