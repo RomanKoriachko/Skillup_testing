@@ -75,6 +75,9 @@ body {
   margin-bottom: 48px;
   text-align: center;
 }
+.main .br {
+  display: none;
+}
 .main .introduce-section {
   background: #0D1A30;
   color: #ffffff;
@@ -120,7 +123,6 @@ body {
   line-height: 32px;
   color: #4EBD09;
   margin-bottom: 48px;
-  margin-right: 422px;
 }
 .main .introduce-section .introduce-wrapper .introduce-content button {
   width: 380px;
@@ -652,9 +654,6 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(5) {
-    margin-right: 160px;
-  }
   .main .benefit-section .benefit-wrapper .benefit-item {
     padding: 0px 5px;
   }
@@ -674,6 +673,9 @@ body {
     line-height: 130%;
     margin-top: 72px;
     margin-bottom: 32px;
+  }
+  .main .br {
+    display: block;
   }
   .main .introduce-section {
     padding: 48px 0px;

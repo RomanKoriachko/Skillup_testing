@@ -41,6 +41,9 @@ body{
         margin-bottom: 48px;
         text-align: center;
     }
+    .br{
+        display: none;
+    }
     .introduce-section {
         background: #0D1A30;
         color: #ffffff;
@@ -73,7 +76,6 @@ body{
                     @include fonts.p2();
                     color: #4EBD09;
                     margin-bottom: 48px;
-                    margin-right: 422px;
                 }
                 button{
                     @include mainButton();
@@ -489,15 +491,6 @@ body{
 // Laptop
 @media(max-width: 1200px) {
     .main{
-        .introduce-section {
-            .introduce-wrapper {
-                .introduce-content {
-                    >p:nth-child(5) {
-                        margin-right: 160px;
-                    }
-                }
-            }
-        }
         .benefit-section {
             .benefit-wrapper {
                 .benefit-item {
@@ -524,6 +517,9 @@ body{
             @include fonts.h3();
             margin-top: 72px;
             margin-bottom: 32px;
+        }
+        .br{
+            display: block
         }
         .introduce-section {
             padding: 48px 0px;
