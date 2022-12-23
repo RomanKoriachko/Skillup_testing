@@ -642,7 +642,7 @@ body {
   line-height: 124%;
   margin-bottom: 32px;
 }
-.footer .footer-buttons > button {
+.footer .footer-buttons button {
   width: 26px;
   height: 26px;
   border: none;
@@ -652,7 +652,7 @@ body {
   background-size: cover;
   transition: 0.3s all;
 }
-.footer .footer-buttons > button:hover {
+.footer .footer-buttons button:hover {
   transform: scale(1.2);
 }
 .footer .footer-buttons .facebook-btn {
