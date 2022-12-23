@@ -929,7 +929,7 @@ body {
   .main .review-section .slider-video .slider-item .review-wrapper, .main .review-section .slider-text .slider-item .review-wrapper {
     max-width: 310px;
   }
-  .footer .footer-buttons > button {
+  .footer .footer-buttons button {
     width: 40px;
     height: 40px;
   }
