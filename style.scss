@@ -384,9 +384,88 @@ body{
             }
         }
     }
+    // .review-section {
+    //     padding-bottom: 48px;
+    //     .slider {
+    //         .slider-item {
+    //             margin-right: 24px;
+    //             .review-text-author {
+    //                 @include fonts.t1();
+    //             }
+    //             .review-text-position {
+    //                 @include fonts.b2();
+    //             }
+    //             .video-wrapper {
+    //                 .video {
+    //                     max-width: 410px;
+    //                     height: 224px;
+    //                     background: #8090AB;
+    //                     border-radius: 8px;
+    //                     margin-bottom: 16px;
+    //                     .video-review {
+    //                         border-radius: 8px;
+    //                     }
+    //                 }
+    //             }
+    //             .review-wrapper {
+    //                 gap: 24px;
+    //                 width: 410px;
+    //                 margin-top: 48px;
+    //                 .review-avatar {
+    //                     min-width: 85px;
+    //                     height: 85px;
+    //                     background-position: center;
+    //                     background-size: contain;
+    //                     border-radius: 50px;
+    //                 }
+    //                 .review-avatar-1 {
+    //                     background-image: url(images/user-avatar-1.jpg);
+    //                 }
+    //                 .review-avatar-2 {
+    //                     background-image: url(images/user-avatar-2.jpg);
+    //                 }
+    //                 .review-avatar-3 {
+    //                     background-image: url(images/user-avatar-3.jpg);
+    //                 }
+    //                 .review-avatar-4 {
+    //                     background-image: url(images/user-avatar-4.jpg);
+    //                 }
+    //                 .review-avatar-5 {
+    //                     background-image: url(images/user-avatar-5.jpg);
+    //                 }
+    //                 .review-avatar-6 {
+    //                     background-image: url(images/user-avatar-6.jpg);
+    //                 }
+    //                 .review-avatar-7 {
+    //                     background-image: url(images/user-avatar-7.jpg);
+    //                 }
+    //                 .review-text {
+    //                     .author-and-fb-wrapper {
+    //                         align-items: center;
+    //                         justify-content: space-between;
+    //                     }
+    //                     >p{
+    //                         @include fonts.t4();
+    //                         margin-bottom: 16px;
+    //                     }
+    //                     .fb-icon {
+    //                         min-width: 26px;
+    //                         height: 26px;
+    //                         background-size: cover;
+    //                         background-image: url(images/facebook.svg);
+    //                         transition: .3s all;
+    //                         &:hover {
+    //                             transform: scale(1.2);
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
     .review-section {
         padding-bottom: 48px;
-        .slider {
+        .slider-video, .slider-text {
             .slider-item {
                 margin-right: 24px;
                 .review-text-author {
@@ -397,7 +476,7 @@ body{
                 }
                 .video-wrapper {
                     .video {
-                        max-width: 410px;
+                        width: 410px;
                         height: 224px;
                         background: #8090AB;
                         border-radius: 8px;
@@ -650,8 +729,29 @@ body{
                 }
             }
         }
+        // .review-section {
+        //     .slider {
+        //         .slider-item {
+        //             .review-wrapper {
+        //                 flex-direction: column;
+        //                 .review-avatar {
+        //                     width: 85px;
+        //                 }
+        //                 .review-text {
+        //                     .fb-icon {
+        //                         min-width: 40px;
+        //                         height: 40px;
+        //                         background-position: center;
+        //                         background-repeat: no-repeat;
+        //                         background-size: contain;
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
         .review-section {
-            .slider {
+            .slider-video, .slider-text {
                 .slider-item {
                     .review-wrapper {
                         flex-direction: column;
@@ -788,17 +888,37 @@ body{
                 }
             }
         }
+        // .review-section {
+        //     .review-section-header {
+        //         padding: 0px 16px;
+        //     }
+        //     .slider {
+        //         padding: 0px 16px;
+        //         .slider-item {
+        //             margin-right: 16px;
+        //             .video-wrapper {
+        //                 .video {
+        //                     max-width: 310px;
+        //                 }
+        //             }
+        //             .review-wrapper {
+        //                 max-width: 310px;
+        //             }
+        //         }
+        //     }
+        // }
         .review-section {
             .review-section-header {
                 padding: 0px 16px;
             }
-            .slider {
+            .slider-video, .slider-text {
                 padding: 0px 16px;
                 .slider-item {
                     margin-right: 16px;
                     .video-wrapper {
                         .video {
                             max-width: 310px;
+                            height: 175px;
                         }
                     }
                     .review-wrapper {
