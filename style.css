@@ -570,6 +570,9 @@ body {
   border-radius: 8px;
   margin-bottom: 16px;
 }
+.main .review-section .slider .slider-item .video-wrapper .video .video-review {
+  border-radius: 8px;
+}
 .main .review-section .slider .slider-item .review-wrapper {
   gap: 24px;
   width: 410px;
@@ -578,18 +581,30 @@ body {
 .main .review-section .slider .slider-item .review-wrapper .review-avatar {
   min-width: 85px;
   height: 85px;
+  background-position: center;
+  background-size: contain;
+  border-radius: 50px;
 }
 .main .review-section .slider .slider-item .review-wrapper .review-avatar-1 {
-  background-image: url(images/user1-img.svg);
+  background-image: url(images/user-avatar-1.jpg);
 }
 .main .review-section .slider .slider-item .review-wrapper .review-avatar-2 {
-  background-image: url(images/user2-img.svg);
+  background-image: url(images/user-avatar-2.jpg);
 }
 .main .review-section .slider .slider-item .review-wrapper .review-avatar-3 {
-  background-image: url(images/user3-img.svg);
+  background-image: url(images/user-avatar-3.jpg);
 }
 .main .review-section .slider .slider-item .review-wrapper .review-avatar-4 {
-  background-image: url(images/user4-img.svg);
+  background-image: url(images/user-avatar-4.jpg);
+}
+.main .review-section .slider .slider-item .review-wrapper .review-avatar-5 {
+  background-image: url(images/user-avatar-5.jpg);
+}
+.main .review-section .slider .slider-item .review-wrapper .review-avatar-6 {
+  background-image: url(images/user-avatar-6.jpg);
+}
+.main .review-section .slider .slider-item .review-wrapper .review-avatar-7 {
+  background-image: url(images/user-avatar-7.jpg);
 }
 .main .review-section .slider .slider-item .review-wrapper .review-text .author-and-fb-wrapper {
   align-items: center;

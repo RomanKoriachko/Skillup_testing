@@ -402,6 +402,9 @@ body{
                         background: #8090AB;
                         border-radius: 8px;
                         margin-bottom: 16px;
+                        .video-review {
+                            border-radius: 8px;
+                        }
                     }
                 }
                 .review-wrapper {
@@ -411,18 +414,30 @@ body{
                     .review-avatar {
                         min-width: 85px;
                         height: 85px;
+                        background-position: center;
+                        background-size: contain;
+                        border-radius: 50px;
                     }
                     .review-avatar-1 {
-                        background-image: url(images/user1-img.svg);
+                        background-image: url(images/user-avatar-1.jpg);
                     }
                     .review-avatar-2 {
-                        background-image: url(images/user2-img.svg);
+                        background-image: url(images/user-avatar-2.jpg);
                     }
                     .review-avatar-3 {
-                        background-image: url(images/user3-img.svg);
+                        background-image: url(images/user-avatar-3.jpg);
                     }
                     .review-avatar-4 {
-                        background-image: url(images/user4-img.svg);
+                        background-image: url(images/user-avatar-4.jpg);
+                    }
+                    .review-avatar-5 {
+                        background-image: url(images/user-avatar-5.jpg);
+                    }
+                    .review-avatar-6 {
+                        background-image: url(images/user-avatar-6.jpg);
+                    }
+                    .review-avatar-7 {
+                        background-image: url(images/user-avatar-7.jpg);
                     }
                     .review-text {
                         .author-and-fb-wrapper {
