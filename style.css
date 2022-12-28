@@ -144,6 +144,12 @@ body {
 .main .introduce-section .introduce-wrapper .introduce-content button:hover {
   transform: translateY(10%);
 }
+.main .introduce-section .introduce-wrapper .introduce-img {
+  width: 65%;
+}
+.main .introduce-section .introduce-wrapper .introduce-img > img {
+  width: 460px;
+}
 .main .benefit-section {
   text-align: center;
 }
