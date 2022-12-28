@@ -548,83 +548,83 @@ body {
 .main .review-section {
   padding-bottom: 48px;
 }
-.main .review-section .slider-video .slider-item, .main .review-section .slider-text .slider-item {
+.main .review-section .slider-text .slider-item {
   margin-right: 24px;
 }
-.main .review-section .slider-video .slider-item .review-text-author, .main .review-section .slider-text .slider-item .review-text-author {
+.main .review-section .slider-text .slider-item .review-text-author {
   font-family: "Exo 2";
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
 }
-.main .review-section .slider-video .slider-item .review-text-position, .main .review-section .slider-text .slider-item .review-text-position {
+.main .review-section .slider-text .slider-item .review-text-position {
   font-family: "Exo 2";
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
 }
-.main .review-section .slider-video .slider-item .video-wrapper .video, .main .review-section .slider-text .slider-item .video-wrapper .video {
+.main .review-section .slider-text .slider-item .video-wrapper .video {
   width: 410px;
   height: 224px;
   background: #8090AB;
   border-radius: 8px;
   margin-bottom: 16px;
 }
-.main .review-section .slider-video .slider-item .video-wrapper .video .video-review, .main .review-section .slider-text .slider-item .video-wrapper .video .video-review {
+.main .review-section .slider-text .slider-item .video-wrapper .video .video-review {
   border-radius: 8px;
 }
-.main .review-section .slider-video .slider-item .review-wrapper, .main .review-section .slider-text .slider-item .review-wrapper {
+.main .review-section .slider-text .slider-item .review-wrapper {
   gap: 24px;
   width: 410px;
   margin-top: 48px;
 }
-.main .review-section .slider-video .slider-item .review-wrapper .review-avatar, .main .review-section .slider-text .slider-item .review-wrapper .review-avatar {
+.main .review-section .slider-text .slider-item .review-wrapper .review-avatar {
   min-width: 85px;
   height: 85px;
   background-position: center;
   background-size: contain;
   border-radius: 50px;
 }
-.main .review-section .slider-video .slider-item .review-wrapper .review-avatar-1, .main .review-section .slider-text .slider-item .review-wrapper .review-avatar-1 {
+.main .review-section .slider-text .slider-item .review-wrapper .review-avatar-1 {
   background-image: url(images/user-avatar-1.jpg);
 }
-.main .review-section .slider-video .slider-item .review-wrapper .review-avatar-2, .main .review-section .slider-text .slider-item .review-wrapper .review-avatar-2 {
+.main .review-section .slider-text .slider-item .review-wrapper .review-avatar-2 {
   background-image: url(images/user-avatar-2.jpg);
 }
-.main .review-section .slider-video .slider-item .review-wrapper .review-avatar-3, .main .review-section .slider-text .slider-item .review-wrapper .review-avatar-3 {
+.main .review-section .slider-text .slider-item .review-wrapper .review-avatar-3 {
   background-image: url(images/user-avatar-3.jpg);
 }
-.main .review-section .slider-video .slider-item .review-wrapper .review-avatar-4, .main .review-section .slider-text .slider-item .review-wrapper .review-avatar-4 {
+.main .review-section .slider-text .slider-item .review-wrapper .review-avatar-4 {
   background-image: url(images/user-avatar-4.jpg);
 }
-.main .review-section .slider-video .slider-item .review-wrapper .review-avatar-5, .main .review-section .slider-text .slider-item .review-wrapper .review-avatar-5 {
+.main .review-section .slider-text .slider-item .review-wrapper .review-avatar-5 {
   background-image: url(images/user-avatar-5.jpg);
 }
-.main .review-section .slider-video .slider-item .review-wrapper .review-avatar-6, .main .review-section .slider-text .slider-item .review-wrapper .review-avatar-6 {
+.main .review-section .slider-text .slider-item .review-wrapper .review-avatar-6 {
   background-image: url(images/user-avatar-6.jpg);
 }
-.main .review-section .slider-video .slider-item .review-wrapper .review-avatar-7, .main .review-section .slider-text .slider-item .review-wrapper .review-avatar-7 {
+.main .review-section .slider-text .slider-item .review-wrapper .review-avatar-7 {
   background-image: url(images/user-avatar-7.jpg);
 }
-.main .review-section .slider-video .slider-item .review-wrapper .review-text .author-and-fb-wrapper, .main .review-section .slider-text .slider-item .review-wrapper .review-text .author-and-fb-wrapper {
+.main .review-section .slider-text .slider-item .review-wrapper .review-text .author-and-fb-wrapper {
   align-items: center;
   justify-content: space-between;
 }
-.main .review-section .slider-video .slider-item .review-wrapper .review-text > p, .main .review-section .slider-text .slider-item .review-wrapper .review-text > p {
+.main .review-section .slider-text .slider-item .review-wrapper .review-text > p {
   font-family: "Exo 2";
   font-weight: 400;
   font-size: 16px;
   line-height: 124%;
   margin-bottom: 16px;
 }
-.main .review-section .slider-video .slider-item .review-wrapper .review-text .fb-icon, .main .review-section .slider-text .slider-item .review-wrapper .review-text .fb-icon {
+.main .review-section .slider-text .slider-item .review-wrapper .review-text .fb-icon {
   min-width: 26px;
   height: 26px;
   background-size: cover;
   background-image: url(images/facebook.svg);
   transition: 0.3s all;
 }
-.main .review-section .slider-video .slider-item .review-wrapper .review-text .fb-icon:hover, .main .review-section .slider-text .slider-item .review-wrapper .review-text .fb-icon:hover {
+.main .review-section .slider-text .slider-item .review-wrapper .review-text .fb-icon:hover {
   transform: scale(1.2);
 }
 
@@ -799,13 +799,13 @@ body {
   .main .form-section .form-section-wrapper .form button {
     width: 100%;
   }
-  .main .review-section .slider-video .slider-item .review-wrapper, .main .review-section .slider-text .slider-item .review-wrapper {
+  .main .review-section .slider-text .slider-item .review-wrapper {
     flex-direction: column;
   }
-  .main .review-section .slider-video .slider-item .review-wrapper .review-avatar, .main .review-section .slider-text .slider-item .review-wrapper .review-avatar {
+  .main .review-section .slider-text .slider-item .review-wrapper .review-avatar {
     width: 85px;
   }
-  .main .review-section .slider-video .slider-item .review-wrapper .review-text .fb-icon, .main .review-section .slider-text .slider-item .review-wrapper .review-text .fb-icon {
+  .main .review-section .slider-text .slider-item .review-wrapper .review-text .fb-icon {
     min-width: 40px;
     height: 40px;
     background-position: center;
@@ -916,17 +916,17 @@ body {
   .main .review-section .review-section-header {
     padding: 0px 16px;
   }
-  .main .review-section .slider-video, .main .review-section .slider-text {
+  .main .review-section .slider-text {
     padding: 0px 16px;
   }
-  .main .review-section .slider-video .slider-item, .main .review-section .slider-text .slider-item {
+  .main .review-section .slider-text .slider-item {
     margin-right: 16px;
   }
-  .main .review-section .slider-video .slider-item .video-wrapper .video, .main .review-section .slider-text .slider-item .video-wrapper .video {
+  .main .review-section .slider-text .slider-item .video-wrapper .video {
     max-width: 310px;
     height: 175px;
   }
-  .main .review-section .slider-video .slider-item .review-wrapper, .main .review-section .slider-text .slider-item .review-wrapper {
+  .main .review-section .slider-text .slider-item .review-wrapper {
     max-width: 310px;
   }
   .footer .footer-buttons button {
