@@ -522,6 +522,7 @@ body {
     }
     .review-section {
         padding-bottom: 48px;
+        text-align: center;
         .slider-text {
             .slider-item {
                 margin-right: 24px;
@@ -597,6 +598,11 @@ body {
                     }
                 }
             }
+        }
+        .review-section-btn {
+            margin-top: 48px;
+            @include mainButton();
+            color: white;
         }
     }
 }
@@ -975,6 +981,9 @@ body {
                         max-width: 310px;
                     }
                 }
+            }
+            .review-section-btn {
+                width: 100%;
             }
         }
     }

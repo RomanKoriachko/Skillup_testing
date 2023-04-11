@@ -706,6 +706,7 @@ body {
 }
 .main .review-section {
   padding-bottom: 48px;
+  text-align: center;
 }
 .main .review-section .slider-text .slider-item {
   margin-right: 24px;
@@ -785,6 +786,27 @@ body {
 }
 .main .review-section .slider-text .slider-item .review-wrapper .review-text .fb-icon:hover {
   transform: scale(1.2);
+}
+.main .review-section .review-section-btn {
+  margin-top: 48px;
+  width: 380px;
+  height: 50px;
+  background: #4ebd09;
+  border-radius: 6px;
+  border: none;
+  padding: 0px 12px;
+  cursor: pointer;
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  transition: 0.3s all;
+  overflow: hidden;
+  box-shadow: none;
+  color: white;
+}
+.main .review-section .review-section-btn:hover {
+  transform: translateY(10%);
 }
 
 .footer {
@@ -1135,6 +1157,9 @@ body {
   }
   .main .review-section .slider-text .slider-item .review-wrapper {
     max-width: 310px;
+  }
+  .main .review-section .review-section-btn {
+    width: 100%;
   }
   .footer .footer-btn {
     width: 100%;
