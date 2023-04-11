@@ -337,12 +337,14 @@ body {
   align-items: center;
   justify-content: center;
   gap: 32px;
+  text-align: center;
 }
-.main .video-section .video-section-wrapper .video-section-text {
-  width: 50%;
-  justify-self: center;
+.main .video-section .video-section-text {
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
 }
-.main .video-section .video-section-wrapper .video-section-text .video-section-item {
+.main .video-section .video-section-text .video-section-item {
   font-family: "Exo 2";
   font-weight: 500;
   font-size: 18px;

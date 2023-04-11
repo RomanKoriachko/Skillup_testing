@@ -248,13 +248,14 @@ body {
             align-items: center;
             justify-content: center;
             gap: 32px;
-            .video-section-text {
-                width: 50%;
-                justify-self: center;
-                .video-section-item {
-                    @include fonts.t2();
-                    margin-bottom: 24px;
-                }
+            text-align: center;
+        }
+        .video-section-text {
+            margin: 0 auto;
+            width: fit-content;
+            .video-section-item {
+                @include fonts.t2();
+                margin-bottom: 24px;
             }
         }
     }
