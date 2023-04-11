@@ -525,11 +525,12 @@ body {
         text-align: center;
         .slider-text {
             .slider-item {
-                margin-right: 24px;
+                margin-right: 34px;
                 .review-text-author {
                     @include fonts.t1();
                 }
                 .review-text-position {
+                    text-align: left;
                     @include fonts.b2();
                 }
                 .video-wrapper {
@@ -577,27 +578,32 @@ body {
                         background-image: url(images/user-avatar-7.jpg);
                     }
                     .review-text {
-                        .author-and-fb-wrapper {
-                            align-items: center;
-                            justify-content: space-between;
-                        }
+                        text-align: left;
                         > p {
                             @include fonts.t4();
                             margin-bottom: 16px;
                         }
-                        .fb-icon {
-                            min-width: 26px;
-                            height: 26px;
-                            background-size: cover;
-                            background-image: url(images/facebook.svg);
-                            transition: 0.3s all;
-                            &:hover {
-                                transform: scale(1.2);
-                            }
-                        }
+                    }
+                }
+                .fb-icon {
+                    min-width: 20px;
+                    height: 20px;
+                    background-size: cover;
+                    background-image: url(images/facebook.svg);
+                    transition: 0.3s all;
+                    &:hover {
+                        transform: scale(1.2);
                     }
                 }
             }
+            .slick-dots {
+                bottom: -45px;
+            }
+        }
+        .author-and-fb-wrapper {
+            margin-top: 15px;
+            align-items: center;
+            gap: 10px;
         }
         .review-section-btn {
             margin-top: 48px;
@@ -693,7 +699,9 @@ body {
                     > p:nth-child(2) {
                         margin-bottom: 32px;
                     }
-                    > p:nth-child(3),
+                    > p:nth-child(3) {
+                        margin-bottom: 20px;
+                    }
                     > p:nth-child(4) {
                         display: none;
                     }

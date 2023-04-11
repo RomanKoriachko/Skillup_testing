@@ -153,7 +153,7 @@ $(document).ready(function () {
     $(".slider-text").slick({
         arrows: false,
         infinite: true,
-        dots: false,
+        dots: true,
         variableWidth: true,
         slidesToShow: 3,
         centerMode: true,

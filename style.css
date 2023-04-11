@@ -709,7 +709,7 @@ body {
   text-align: center;
 }
 .main .review-section .slider-text .slider-item {
-  margin-right: 24px;
+  margin-right: 34px;
 }
 .main .review-section .slider-text .slider-item .review-text-author {
   font-family: "Exo 2";
@@ -718,6 +718,7 @@ body {
   line-height: 24px;
 }
 .main .review-section .slider-text .slider-item .review-text-position {
+  text-align: left;
   font-family: "Exo 2";
   font-weight: 600;
   font-size: 16px;
@@ -766,9 +767,8 @@ body {
 .main .review-section .slider-text .slider-item .review-wrapper .review-avatar-7 {
   background-image: url(images/user-avatar-7.jpg);
 }
-.main .review-section .slider-text .slider-item .review-wrapper .review-text .author-and-fb-wrapper {
-  align-items: center;
-  justify-content: space-between;
+.main .review-section .slider-text .slider-item .review-wrapper .review-text {
+  text-align: left;
 }
 .main .review-section .slider-text .slider-item .review-wrapper .review-text > p {
   font-family: "Exo 2";
@@ -777,15 +777,23 @@ body {
   line-height: 124%;
   margin-bottom: 16px;
 }
-.main .review-section .slider-text .slider-item .review-wrapper .review-text .fb-icon {
-  min-width: 26px;
-  height: 26px;
+.main .review-section .slider-text .slider-item .fb-icon {
+  min-width: 20px;
+  height: 20px;
   background-size: cover;
   background-image: url(images/facebook.svg);
   transition: 0.3s all;
 }
-.main .review-section .slider-text .slider-item .review-wrapper .review-text .fb-icon:hover {
+.main .review-section .slider-text .slider-item .fb-icon:hover {
   transform: scale(1.2);
+}
+.main .review-section .slider-text .slick-dots {
+  bottom: -45px;
+}
+.main .review-section .author-and-fb-wrapper {
+  margin-top: 15px;
+  align-items: center;
+  gap: 10px;
 }
 .main .review-section .review-section-btn {
   margin-top: 48px;
@@ -905,7 +913,9 @@ body {
   .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(2) {
     margin-bottom: 32px;
   }
-  .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(3),
+  .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(3) {
+    margin-bottom: 20px;
+  }
   .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(4) {
     display: none;
   }
