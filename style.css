@@ -63,7 +63,7 @@ table {
 }
 
 body {
-  color: #0D1A30;
+  color: #0d1a30;
 }
 
 .main .h2-header {
@@ -79,7 +79,7 @@ body {
   display: none;
 }
 .main .introduce-section {
-  background: #0D1A30;
+  background: #0d1a30;
   color: #ffffff;
   padding-top: 24px;
   padding-bottom: 65px;
@@ -107,7 +107,8 @@ body {
   line-height: 124%;
   margin-bottom: 48px;
 }
-.main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(3), .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(4) {
+.main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(3),
+.main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(4) {
   font-family: "Exo 2";
   font-weight: 600;
   font-size: 24px;
@@ -121,13 +122,13 @@ body {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  color: #4EBD09;
+  color: #4ebd09;
   margin-bottom: 48px;
 }
 .main .introduce-section .introduce-wrapper .introduce-content button {
   width: 380px;
   height: 50px;
-  background: #4EBD09;
+  background: #4ebd09;
   border-radius: 6px;
   border: none;
   padding: 0px 12px;
@@ -139,7 +140,7 @@ body {
   transition: 0.3s all;
   overflow: hidden;
   box-shadow: none;
-  color: #0D1A30;
+  color: #0d1a30;
 }
 .main .introduce-section .introduce-wrapper .introduce-content button:hover {
   transform: translateY(10%);
@@ -230,13 +231,13 @@ body {
   width: 100%;
   height: 24px;
   border-radius: 6px;
-  background: linear-gradient(147.71deg, #F0F5E0 20.89%, #E0F5E3 80.64%);
+  background: linear-gradient(147.71deg, #f0f5e0 20.89%, #e0f5e3 80.64%);
   margin-bottom: 24px;
 }
 .main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-parent .scale-children {
   position: absolute;
   height: 100%;
-  background: #4EBD09;
+  background: #4ebd09;
   border-radius: 6px;
   transition: 1s all;
 }
@@ -271,7 +272,7 @@ body {
 .main .who-is-section .who-is-tablet-btn {
   width: 380px;
   height: 50px;
-  background: #4EBD09;
+  background: #4ebd09;
   border-radius: 6px;
   border: none;
   padding: 0px 12px;
@@ -312,7 +313,7 @@ body {
   margin-right: 8px;
 }
 .main .start-in-it {
-  background: #0D1A30;
+  background: #0d1a30;
   color: #ffffff;
   text-align: center;
   font-family: "Exo 2";
@@ -324,13 +325,14 @@ body {
 .main .video-section .video {
   width: 50%;
   height: 354px;
-  background: #8090AB;
+  background: #8090ab;
   border-radius: 12px;
 }
 .main .video-section .video .video-youtube {
   border-radius: 12px;
 }
 .main .video-section .video-section-wrapper {
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
   gap: 32px;
@@ -365,7 +367,7 @@ body {
   font-weight: 700;
   font-size: 56px;
   line-height: 124%;
-  color: #4EBD09;
+  color: #4ebd09;
 }
 .main .numbers-section .numbers-row .numbers-item > p:nth-child(2) {
   font-family: "Exo 2";
@@ -375,12 +377,12 @@ body {
 }
 .main .numbers-section .numbers-comparison {
   padding: 48px 38px;
-  background: linear-gradient(126.48deg, #FFE2D0 -25%, #FCF9E8 41.69%);
+  background: linear-gradient(126.48deg, #ffe2d0 -25%, #fcf9e8 41.69%);
   border-radius: 12px;
 }
 .main .numbers-section .numbers-comparison .numbers-comparison-item {
   justify-content: space-between;
-  border-bottom: 1px solid #D9D9D9;
+  border-bottom: 1px solid #d9d9d9;
 }
 .main .numbers-section .numbers-comparison .numbers-comparison-item > div {
   margin: 22px 0px;
@@ -418,12 +420,12 @@ body {
 .main .sign-up-section {
   padding: 48px 0px;
   text-align: center;
-  background: #0D1A30;
+  background: #0d1a30;
 }
 .main .sign-up-section button {
   width: 380px;
   height: 50px;
-  background: #4EBD09;
+  background: #4ebd09;
   border-radius: 6px;
   border: none;
   padding: 0px 12px;
@@ -435,7 +437,7 @@ body {
   transition: 0.3s all;
   overflow: hidden;
   box-shadow: none;
-  color: #0D1A30;
+  color: #0d1a30;
 }
 .main .sign-up-section button:hover {
   transform: translateY(10%);
@@ -463,7 +465,7 @@ body {
   margin-top: 32px;
 }
 .main .form-section {
-  background: #0D1A30;
+  background: #0d1a30;
   color: #ffffff;
   padding: 48px 0px;
 }
@@ -493,14 +495,14 @@ body {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  color: #4EBD09;
+  color: #4ebd09;
 }
 .main .form-section .form-section-wrapper .form {
   width: 50%;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 12px;
   padding: 32px;
-  color: #0D1A30;
+  color: #0d1a30;
 }
 .main .form-section .form-section-wrapper .form .form-input {
   flex-direction: column;
@@ -519,21 +521,21 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  border: 1px solid #0D1A30;
+  border: 1px solid #0d1a30;
   border-radius: 6px;
   padding: 13px 16px;
-  caret-color: #4EBD09;
+  caret-color: #4ebd09;
 }
 .main .form-section .form-section-wrapper .form .form-input input:focus {
-  outline-color: #4EBD09;
+  outline-color: #4ebd09;
 }
 .main .form-section .form-section-wrapper .form .form-input:focus-within {
-  color: #4EBD09;
+  color: #4ebd09;
 }
 .main .form-section .form-section-wrapper .form button {
   width: 380px;
   height: 50px;
-  background: #4EBD09;
+  background: #4ebd09;
   border-radius: 6px;
   border: none;
   padding: 0px 12px;
@@ -572,7 +574,7 @@ body {
 .main .review-section .slider-text .slider-item .video-wrapper .video {
   width: 410px;
   height: 224px;
-  background: #8090AB;
+  background: #8090ab;
   border-radius: 8px;
   margin-bottom: 16px;
 }
@@ -636,7 +638,7 @@ body {
 
 .footer {
   padding: 48px 0px;
-  background: #0D1A30;
+  background: #0d1a30;
   color: #ffffff;
   text-align: center;
 }
@@ -710,7 +712,8 @@ body {
   .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(2) {
     margin-bottom: 32px;
   }
-  .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(3), .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(4) {
+  .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(3),
+  .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(4) {
     display: none;
   }
   .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(4) {
@@ -917,7 +920,7 @@ body {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    color: #0D1A30;
+    color: #0d1a30;
   }
   .main .review-section .review-section-header {
     padding: 0px 16px;

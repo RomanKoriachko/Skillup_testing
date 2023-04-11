@@ -1,16 +1,16 @@
-@use 'reset';
-@use 'fonts';
+@use "reset";
+@use "fonts";
 
 @mixin mainButton() {
     width: 380px;
     height: 50px;
-    background: #4EBD09;
+    background: #4ebd09;
     border-radius: 6px;
     border: none;
     padding: 0px 12px;
     cursor: pointer;
     @include fonts.b1();
-    transition: .3s all;
+    transition: 0.3s all;
     overflow: hidden;
     box-shadow: none;
     &:hover {
@@ -18,7 +18,7 @@
     }
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 .container {
@@ -29,29 +29,29 @@
 .row {
     display: flex;
 }
-body{
-    color: #0D1A30;
+body {
+    color: #0d1a30;
 }
 
-// Desktop 
-.main{
+// Desktop
+.main {
     .h2-header {
         @include fonts.h2();
         margin-top: 104px;
         margin-bottom: 48px;
         text-align: center;
     }
-    .br{
+    .br {
         display: none;
     }
     .introduce-section {
-        background: #0D1A30;
+        background: #0d1a30;
         color: #ffffff;
         padding-top: 24px;
         padding-bottom: 65px;
         .logo {
             margin-bottom: 64px;
-            >img{
+            > img {
                 height: 80px;
             }
         }
@@ -59,33 +59,33 @@ body{
             align-items: center;
             gap: 42px;
             .introduce-content {
-                
-                >p:nth-child(1) {
+                > p:nth-child(1) {
                     @include fonts.t1();
                 }
-                >p:nth-child(2) {
+                > p:nth-child(2) {
                     @include fonts.h1();
                     margin-bottom: 48px;
                 }
-                >p:nth-child(3), >p:nth-child(4) {
+                > p:nth-child(3),
+                > p:nth-child(4) {
                     @include fonts.p2();
                 }
-                >p:nth-child(4) {
+                > p:nth-child(4) {
                     margin-bottom: 48px;
                 }
-                >p:nth-child(5) {
+                > p:nth-child(5) {
                     @include fonts.p2();
-                    color: #4EBD09;
+                    color: #4ebd09;
                     margin-bottom: 48px;
                 }
-                button{
+                button {
                     @include mainButton();
-                    color: #0D1A30;
+                    color: #0d1a30;
                 }
             }
             .introduce-img {
                 width: 65%;
-                >img{
+                > img {
                     width: 460px;
                     // height: 100%;
                 }
@@ -99,14 +99,14 @@ body{
             .benefit-item {
                 width: 410px;
                 padding: 0px 16px;
-                >img{
+                > img {
                     margin-bottom: 12px;
                 }
-                >p:nth-child(2) {
+                > p:nth-child(2) {
                     @include fonts.t1();
                     margin-bottom: 25px;
                 }
-                >p:nth-child(3) {
+                > p:nth-child(3) {
                     @include fonts.t2();
                 }
             }
@@ -120,11 +120,11 @@ body{
             gap: 32px;
             .who-is-text {
                 width: 50%;
-                >p:nth-child(1) {
+                > p:nth-child(1) {
                     @include fonts.t2();
                     margin-bottom: 24px;
                 }
-                >p:nth-child(2) {
+                > p:nth-child(2) {
                     @include fonts.t2();
                     margin-bottom: 24px;
                 }
@@ -137,10 +137,10 @@ body{
                         align-items: center;
                         margin-bottom: 16px;
                         .scale-text {
-                            >p:nth-child(1) {
+                            > p:nth-child(1) {
                                 @include fonts.p2();
                             }
-                            >p:nth-child(2) {
+                            > p:nth-child(2) {
                                 @include fonts.t4();
                             }
                         }
@@ -153,12 +153,16 @@ body{
                         width: 100%;
                         height: 24px;
                         border-radius: 6px;
-                        background: linear-gradient(147.71deg, #F0F5E0 20.89%, #E0F5E3 80.64%);
+                        background: linear-gradient(
+                            147.71deg,
+                            #f0f5e0 20.89%,
+                            #e0f5e3 80.64%
+                        );
                         margin-bottom: 24px;
                         .scale-children {
                             position: absolute;
                             height: 100%;
-                            background: #4EBD09;
+                            background: #4ebd09;
                             border-radius: 6px;
                             transition: 1s all;
                         }
@@ -222,7 +226,7 @@ body{
         margin-right: 8px;
     }
     .start-in-it {
-        background: #0D1A30;
+        background: #0d1a30;
         color: #ffffff;
         text-align: center;
         @include fonts.h2();
@@ -232,13 +236,14 @@ body{
         .video {
             width: 50%;
             height: 354px;
-            background: #8090AB;
+            background: #8090ab;
             border-radius: 12px;
             .video-youtube {
                 border-radius: 12px;
             }
         }
         .video-section-wrapper {
+            flex-direction: row-reverse;
             align-items: center;
             justify-content: center;
             gap: 32px;
@@ -263,26 +268,30 @@ body{
             .numbers-item {
                 text-align: center;
                 width: 330px;
-                >p:nth-child(1) {
+                > p:nth-child(1) {
                     @include fonts.h1();
-                    color: #4EBD09;
+                    color: #4ebd09;
                 }
-                >p:nth-child(2) {
+                > p:nth-child(2) {
                     @include fonts.t4();
                 }
             }
         }
         .numbers-comparison {
             padding: 48px 38px;
-            background: linear-gradient(126.48deg, #FFE2D0 -25%, #FCF9E8 41.69%);
+            background: linear-gradient(
+                126.48deg,
+                #ffe2d0 -25%,
+                #fcf9e8 41.69%
+            );
             border-radius: 12px;
             .numbers-comparison-item {
                 justify-content: space-between;
-                border-bottom: 1px solid #D9D9D9;;
-                >div{
+                border-bottom: 1px solid #d9d9d9;
+                > div {
                     margin: 22px 0px;
                     width: 25%;
-                    text-align: center
+                    text-align: center;
                 }
                 .numbers-comparison-text1 {
                     @include fonts.t1();
@@ -304,7 +313,7 @@ body{
                     background-repeat: no-repeat;
                 }
             }
-            .numbers-comparison-item:first-child{
+            .numbers-comparison-item:first-child {
                 border: none;
             }
         }
@@ -312,10 +321,10 @@ body{
     .sign-up-section {
         padding: 48px 0px;
         text-align: center;
-        background: #0D1A30;
-        button{
+        background: #0d1a30;
+        button {
             @include mainButton();
-            color: #0D1A30;
+            color: #0d1a30;
         }
     }
     .benefits-section {
@@ -326,7 +335,7 @@ body{
             gap: 24px;
             .benefits-item {
                 @include fonts.t2();
-            } 
+            }
         }
         .benefits-footer {
             @include fonts.p2();
@@ -335,7 +344,7 @@ body{
         }
     }
     .form-section {
-        background: #0D1A30;
+        background: #0d1a30;
         color: #ffffff;
         padding: 48px 0px;
         .form-section-wrapper {
@@ -343,45 +352,45 @@ body{
             gap: 32px;
             .form-section-text {
                 width: 50%;
-                >p:nth-child(1) {
+                > p:nth-child(1) {
                     @include fonts.h2();
                     margin-bottom: 32px;
                 }
-                >p:nth-child(2) {
+                > p:nth-child(2) {
                     @include fonts.p2();
                     margin-bottom: 32px;
                 }
-                >p:nth-child(3) {
+                > p:nth-child(3) {
                     @include fonts.p2();
-                    color: #4EBD09;
+                    color: #4ebd09;
                 }
             }
             .form {
                 width: 50%;
-                background: #FFFFFF;
+                background: #ffffff;
                 border-radius: 12px;
                 padding: 32px;
-                color: #0D1A30;
+                color: #0d1a30;
                 .form-input {
                     flex-direction: column;
                     gap: 8px;
                     margin-bottom: 24px;
-                    transition: .3s all;
+                    transition: 0.3s all;
                     label {
                         @include fonts.b2();
                     }
-                    input{
+                    input {
                         @include fonts.t2();
-                        border: 1px solid #0D1A30;
+                        border: 1px solid #0d1a30;
                         border-radius: 6px;
                         padding: 13px 16px;
-                        caret-color: #4EBD09;
+                        caret-color: #4ebd09;
                         &:focus {
-                            outline-color: #4EBD09;
+                            outline-color: #4ebd09;
                         }
                     }
                     &:focus-within {
-                        color: #4EBD09;
+                        color: #4ebd09;
                     }
                 }
                 button {
@@ -407,7 +416,7 @@ body{
                     .video {
                         width: 410px;
                         height: 224px;
-                        background: #8090AB;
+                        background: #8090ab;
                         border-radius: 8px;
                         margin-bottom: 16px;
                         .video-review {
@@ -452,7 +461,7 @@ body{
                             align-items: center;
                             justify-content: space-between;
                         }
-                        >p{
+                        > p {
                             @include fonts.t4();
                             margin-bottom: 16px;
                         }
@@ -461,7 +470,7 @@ body{
                             height: 26px;
                             background-size: cover;
                             background-image: url(images/facebook.svg);
-                            transition: .3s all;
+                            transition: 0.3s all;
                             &:hover {
                                 transform: scale(1.2);
                             }
@@ -474,7 +483,7 @@ body{
 }
 .footer {
     padding: 48px 0px;
-    background: #0D1A30;
+    background: #0d1a30;
     color: #ffffff;
     text-align: center;
     .footer-wrapper {
@@ -483,7 +492,7 @@ body{
         margin-bottom: 32px;
     }
     .footer-buttons {
-        button{
+        button {
             width: 26px;
             height: 26px;
             border: none;
@@ -491,7 +500,7 @@ body{
             cursor: pointer;
             background: transparent;
             background-size: cover;
-            transition: .3s all;
+            transition: 0.3s all;
             &:hover {
                 transform: scale(1.2);
             }
@@ -512,8 +521,8 @@ body{
 }
 
 // Laptop
-@media(max-width: 1200px) {
-    .main{
+@media (max-width: 1200px) {
+    .main {
         .benefit-section {
             .benefit-wrapper {
                 .benefit-item {
@@ -531,18 +540,18 @@ body{
 }
 
 // Tablet
-@media(max-width: 992px) {
+@media (max-width: 992px) {
     .container {
         padding: 0px 16px;
     }
-    .main{
+    .main {
         .h2-header {
             @include fonts.h3();
             margin-top: 72px;
             margin-bottom: 32px;
         }
-        .br{
-            display: block
+        .br {
+            display: block;
         }
         .introduce-section {
             padding: 48px 0px;
@@ -552,21 +561,22 @@ body{
             .introduce-wrapper {
                 .introduce-content {
                     margin-right: 100px;
-                    >p:nth-child(2) {
+                    > p:nth-child(2) {
                         margin-bottom: 32px;
                     }
-                    >p:nth-child(3), >p:nth-child(4) {
+                    > p:nth-child(3),
+                    > p:nth-child(4) {
                         display: none;
                     }
-                    >p:nth-child(4) {
+                    > p:nth-child(4) {
                         margin-bottom: 32px;
                     }
-                    >p:nth-child(5) {
+                    > p:nth-child(5) {
                         margin-right: 0px;
                         margin-bottom: 32px;
                     }
                 }
-                .introduce-img{
+                .introduce-img {
                     display: none;
                 }
             }
@@ -608,7 +618,7 @@ body{
         .video-section {
             .video-section-wrapper {
                 flex-direction: column;
-                gap: 24px;  
+                gap: 24px;
                 .video {
                     width: 100%;
                 }
@@ -645,14 +655,14 @@ body{
                     .form-section-text-hide-tablet {
                         display: none;
                     }
-                    >p:nth-child(1) {
+                    > p:nth-child(1) {
                         @include fonts.p2();
                         margin-bottom: 32px;
                     }
                 }
                 .form {
                     width: 70%;
-                    button{
+                    button {
                         width: 100%;
                     }
                 }
@@ -680,7 +690,7 @@ body{
             }
         }
     }
-    .footer{
+    .footer {
         .footer-wrapper {
             flex-direction: column;
             gap: 32px;
@@ -689,7 +699,7 @@ body{
 }
 
 // hide numbers-comparison
-@media(max-width: 750px) {
+@media (max-width: 750px) {
     .main {
         .numbers-section {
             .numbers-row {
@@ -703,24 +713,24 @@ body{
 }
 
 // Mobile
-@media(max-width: 576px) {
-    .main{
+@media (max-width: 576px) {
+    .main {
         .introduce-section {
             .introduce-wrapper {
                 .introduce-content {
                     margin-right: 0px;
-                    >p:nth-child(2) {
+                    > p:nth-child(2) {
                         @include fonts.h2();
                         margin-bottom: 32px;
                     }
-                    >p:nth-child(4) {
+                    > p:nth-child(4) {
                         margin-bottom: 32px;
                     }
-                    >p:nth-child(5) {
+                    > p:nth-child(5) {
                         margin-right: 0px;
                         margin-bottom: 32px;
                     }
-                    button{
+                    button {
                         @include fonts.b2();
                         width: 100%;
                     }
@@ -739,11 +749,11 @@ body{
         }
         .who-is-section {
             .who-is-wrapper {
-                .who-is-text{
-                    >p:nth-child(1) {
+                .who-is-text {
+                    > p:nth-child(1) {
                         margin-bottom: 32px;
                     }
-                    >p:nth-child(2) {
+                    > p:nth-child(2) {
                         margin-bottom: 0;
                     }
                 }
@@ -771,7 +781,7 @@ body{
             }
         }
         .sign-up-section {
-            button{
+            button {
                 width: 100%;
                 @include fonts.b2();
             }
@@ -789,9 +799,9 @@ body{
                     background: transparent;
                     color: #ffffff;
                     padding: 0px;
-                    button{
+                    button {
                         @include fonts.b2();
-                        color: #0D1A30;
+                        color: #0d1a30;
                     }
                 }
             }
@@ -819,7 +829,7 @@ body{
     }
     .footer {
         .footer-buttons {
-            button{
+            button {
                 width: 40px;
                 height: 40px;
             }
