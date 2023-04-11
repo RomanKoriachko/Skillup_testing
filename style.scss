@@ -60,7 +60,7 @@ body {
             gap: 42px;
             .introduce-content {
                 > p:nth-child(1) {
-                    @include fonts.t1();
+                    @include fonts.p2();
                 }
                 > p:nth-child(2) {
                     @include fonts.h1();
@@ -610,6 +610,10 @@ body {
         @include fonts.t4();
         margin-bottom: 32px;
     }
+    .footer-btn {
+        @include mainButton();
+        margin-bottom: 32px;
+    }
     .footer-buttons {
         button {
             width: 26px;
@@ -975,6 +979,9 @@ body {
         }
     }
     .footer {
+        .footer-btn {
+            width: 100%;
+        }
         .footer-buttons {
             button {
                 width: 40px;

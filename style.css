@@ -96,9 +96,9 @@ body {
 }
 .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(1) {
   font-family: "Exo 2";
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
 }
 .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(2) {
   font-family: "Exo 2";
@@ -801,6 +801,26 @@ body {
   line-height: 124%;
   margin-bottom: 32px;
 }
+.footer .footer-btn {
+  width: 380px;
+  height: 50px;
+  background: #4ebd09;
+  border-radius: 6px;
+  border: none;
+  padding: 0px 12px;
+  cursor: pointer;
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  transition: 0.3s all;
+  overflow: hidden;
+  box-shadow: none;
+  margin-bottom: 32px;
+}
+.footer .footer-btn:hover {
+  transform: translateY(10%);
+}
 .footer .footer-buttons button {
   width: 26px;
   height: 26px;
@@ -1115,6 +1135,9 @@ body {
   }
   .main .review-section .slider-text .slider-item .review-wrapper {
     max-width: 310px;
+  }
+  .footer .footer-btn {
+    width: 100%;
   }
   .footer .footer-buttons button {
     width: 40px;

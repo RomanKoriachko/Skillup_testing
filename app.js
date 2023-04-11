@@ -158,6 +158,8 @@ $(document).ready(function () {
         slidesToShow: 3,
         centerMode: true,
         centerPadding: "60px",
+        autoplay: true,
+        autoplaySpeed: 3000,
         responsive: [
             {
                 breakpoint: 576,
